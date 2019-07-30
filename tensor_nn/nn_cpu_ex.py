@@ -14,8 +14,8 @@ Author: Aymeric Damien
 Project: https://github.com/aymericdamien/TensorFlow-Examples/
 """
 
-import os
 from __future__ import print_function
+import os
 
 # Import MNIST data
 from tensorflow.examples.tutorials.mnist import input_data
