@@ -103,6 +103,12 @@ with tf.Session() as sess:
 
     print("Optimization Finished!")
 
+    # check gpu device
+    if tf.test.gpu_device_name():
+        print('Default GPU Device: {}'.format(tf.test.gpu_device_name()))
+    else:
+        print("Please install GPU version of TF")
+
     # Calculate accuracy for MNIST test images
     print("Testing Accuracy:", \
         sess.run(accuracy, feed_dict={X: mnist.test.images,
